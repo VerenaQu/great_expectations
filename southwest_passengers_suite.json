@@ -1,0 +1,398 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "southwest_passengers_suite",
+  "expectations": [
+    {
+      "expectation_type": "expect_table_columns_to_match_set",
+      "kwargs": {
+        "column_set": [
+          "AV_PASSENGERS_PER_FLIGHT",
+          "PASSENGERS",
+          "SEATS_PER_FLIGHT",
+          "FREIGHT",
+          "DEPARTURES_PERFORMED",
+          "UNIQUE_CARRIER_NAME",
+          "ORIGIN",
+          "DEST",
+          "SEATS",
+          "AIRCRAFT_GROUP",
+          "MAIL",
+          "MONTH",
+          "AIRCRAFT_TYPE",
+          "UNIQUE_CARRIER",
+          "YEAR"
+        ]
+      },
+      "meta": {
+        "profiler_details": {
+          "success_ratio": 1.0
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "PASSENGERS"
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "PASSENGERS"
+            },
+            "metric_name": "column_values.nonnull.unexpected_count",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "ORIGIN"
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "ORIGIN"
+            },
+            "metric_name": "column_values.nonnull.unexpected_count",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "DEST"
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "DEST"
+            },
+            "metric_name": "column_values.nonnull.unexpected_count",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "AIRCRAFT_TYPE"
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "AIRCRAFT_TYPE"
+            },
+            "metric_name": "column_values.nonnull.unexpected_count",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "SEATS_PER_FLIGHT"
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "SEATS_PER_FLIGHT"
+            },
+            "metric_name": "column_values.nonnull.unexpected_count",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "AV_PASSENGERS_PER_FLIGHT"
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "AV_PASSENGERS_PER_FLIGHT"
+            },
+            "metric_name": "column_values.nonnull.unexpected_count",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "AIRCRAFT_TYPE",
+        "max_value": 838,
+        "min_value": 612,
+        "mostly": 1.0,
+        "strict_max": false,
+        "strict_min": false
+      },
+      "meta": {
+        "profiler_details": {
+          "column_max_values_range_estimator": {
+            "metric_configuration": {
+              "domain_kwargs": {
+                "column": "AIRCRAFT_TYPE"
+              },
+              "metric_name": "column.max",
+              "metric_value_kwargs": null
+            },
+            "num_batches": 1
+          },
+          "column_min_values_range_estimator": {
+            "metric_configuration": {
+              "domain_kwargs": {
+                "column": "AIRCRAFT_TYPE"
+              },
+              "metric_name": "column.min",
+              "metric_value_kwargs": null
+            },
+            "num_batches": 1
+          }
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "SEATS_PER_FLIGHT",
+        "max_value": 175.0,
+        "min_value": 143.0,
+        "mostly": 1.0,
+        "strict_max": false,
+        "strict_min": false
+      },
+      "meta": {
+        "profiler_details": {
+          "column_max_values_range_estimator": {
+            "metric_configuration": {
+              "domain_kwargs": {
+                "column": "SEATS_PER_FLIGHT"
+              },
+              "metric_name": "column.max",
+              "metric_value_kwargs": null
+            },
+            "num_batches": 1
+          },
+          "column_min_values_range_estimator": {
+            "metric_configuration": {
+              "domain_kwargs": {
+                "column": "SEATS_PER_FLIGHT"
+              },
+              "metric_name": "column.min",
+              "metric_value_kwargs": null
+            },
+            "num_batches": 1
+          }
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_value_lengths_to_be_between",
+      "kwargs": {
+        "column": "ORIGIN",
+        "max_value": 3,
+        "min_value": 3,
+        "mostly": 1.0,
+        "strict_max": false,
+        "strict_min": false
+      },
+      "meta": {
+        "profiler_details": {
+          "column_max_length_range_estimator": {
+            "metric_configuration": {
+              "domain_kwargs": {
+                "column": "ORIGIN"
+              },
+              "metric_name": "column_values.length.max",
+              "metric_value_kwargs": null
+            },
+            "num_batches": 1
+          },
+          "column_min_length_range_estimator": {
+            "metric_configuration": {
+              "domain_kwargs": {
+                "column": "ORIGIN"
+              },
+              "metric_name": "column_values.length.min",
+              "metric_value_kwargs": null
+            },
+            "num_batches": 1
+          }
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_value_lengths_to_be_between",
+      "kwargs": {
+        "column": "DEST",
+        "max_value": 3,
+        "min_value": 3,
+        "mostly": 1.0,
+        "strict_max": false,
+        "strict_min": false
+      },
+      "meta": {
+        "profiler_details": {
+          "column_max_length_range_estimator": {
+            "metric_configuration": {
+              "domain_kwargs": {
+                "column": "DEST"
+              },
+              "metric_name": "column_values.length.max",
+              "metric_value_kwargs": null
+            },
+            "num_batches": 1
+          },
+          "column_min_length_range_estimator": {
+            "metric_configuration": {
+              "domain_kwargs": {
+                "column": "DEST"
+              },
+              "metric_name": "column_values.length.min",
+              "metric_value_kwargs": null
+            },
+            "num_batches": 1
+          }
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "AIRCRAFT_TYPE",
+        "mostly": 1.0,
+        "value_set": [
+          838,
+          612,
+          614
+        ]
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "AIRCRAFT_TYPE"
+            },
+            "metric_name": "column.distinct_values",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1,
+          "parse_strings_as_datetimes": false
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_unique_value_count_to_be_between",
+      "kwargs": {
+        "column": "AIRCRAFT_TYPE",
+        "max_value": 3,
+        "min_value": 3,
+        "strict_max": false,
+        "strict_min": false
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "AIRCRAFT_TYPE"
+            },
+            "metric_name": "column.distinct_values.count",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_unique_value_count_to_be_between",
+      "kwargs": {
+        "column": "SEATS_PER_FLIGHT",
+        "max_value": 2,
+        "min_value": 2,
+        "strict_max": false,
+        "strict_min": false
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "SEATS_PER_FLIGHT"
+            },
+            "metric_name": "column.distinct_values.count",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_pair_values_to_be_in_set",
+      "kwargs": {
+        "column_A": "AIRCRAFT_TYPE",
+        "column_B": "SEATS_PER_FLIGHT",
+        "value_pairs_set": [
+          [
+            612,
+            143
+          ],
+          [
+            614,
+            175
+          ],
+          [
+            838,
+            175
+          ]
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_of_type",
+      "kwargs": {
+        "column": "ORIGIN",
+        "type_": "str"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_of_type",
+      "kwargs": {
+        "column": "DEST",
+        "type_": "str"
+      },
+      "meta": {}
+    }
+  ],
+  "ge_cloud_id": null,
+  "meta": {
+    "citations": [
+      {
+        "citation_date": "2024-09-22T12:26:52.219104Z",
+        "comment": "Created by effective Rule-Based Profiler of OnboardingDataAssistant with the configuration included.\n"
+      }
+    ],
+    "great_expectations_version": "0.18.13"
+  }
+}
